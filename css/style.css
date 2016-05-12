@@ -1,17 +1,38 @@
-.tile-container {
-  width: 100%;
-  max-width: 300px;
-  padding: 10px;
-  margin: 0 auto;
+body {
+    background-color: #D8E4F0;
 }
 
-.tile {
-  background: #FFF;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 10px 0;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.add-todo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    padding: 14px 21px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+
+
+.todo-container {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin: 0 auto;
+}
+
+.todo {
+    font-weight: bold;
+    font-size: 200%;
+    vertical-align: middle;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

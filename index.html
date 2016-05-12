@@ -16,13 +16,44 @@
         <![endif]-->
     </head>
     <body>
-        <div class="tile-container">
-            <div id="tile1" class="tile">Test Todo 1</div>
-            <div id="tile1" class="tile">Test Todo 2</div>
-            <div id="tile1" class="tile">Test Todo 3</div>
+        <!-- Add a new todo button -->
+        <button type="button" class="btn btn-success add-todo" data-toggle="modal" data-target="#newTodoModal">
+            <i class="glyphicon glyphicon-plus"></i>
+        </button>
+
+        <!-- Todo tile container -->
+        <div id="todo-container" class="todo-container"></div>
+
+        <!-- New todo modal -->
+        <div class="modal fade" id="newTodoModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                        <h4 class="modal-title" id="newTodoModalTitle">Add a Todo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="newModalForm">
+                            <div class="form-group">
+                                <label for="newModalText">New Todo</label>
+                                <input type="text" class="form-control input-lg" id="newTodoContent" placeholder="Enter todo description here..." maxlength="10">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="submit" type="submit" class="btn btn-success" data-dismiss="modal">Save</button>
+                        <button id="cancel" type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- JS Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script> 
         <script src="js/index.js"></script> 
+        <script src="js/swipetodismiss.plugin.js"></script> 
     </body>
 </html>
